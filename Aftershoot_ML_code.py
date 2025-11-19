@@ -305,7 +305,10 @@ if __name__ == "__main__":
     })
 
     submission = submission.set_index("id_global").loc[val_inputs["id_global"]].reset_index()
-    submission.to_csv("submission_hybrid.csv", index=False)
+    save_dir = r"C:/Users/jagad/Downloads/14648881b93c11f0/submissions"
+    os.makedirs(save_dir, exist_ok=True)
 
-    print("Saved: submission_hybrid.csv")
+    save_path = os.path.join(save_dir, "submission_hybrid.csv")
 
+    submission.to_csv(save_path, index=False)
+    print(f"✔ Submission saved successfully at:\n{save_path}")
