@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="assets/banner.png" width="100%">
+</p>
+
+
 # 📸 AI-Based White Balance Prediction
 
 ### Hybrid Deep Learning Model (CNN + Metadata MLP)
